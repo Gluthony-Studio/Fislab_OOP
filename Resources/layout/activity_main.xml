@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="GLB"
+        android:layout_width="225.0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btGLBB"
+        android:id="@+id/btGLB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        />
+    <Button
+        android:text="GLBB"
+        android:layout_width="225.0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btGLB"
+        android:id="@+id/btGLBB" 
+        />
+    <Button
+        android:text="Parabola"
+        android:layout_width=" 225.0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btGLB"
+        android:id="@+id/btParabola"
+        />
+</RelativeLayout>
