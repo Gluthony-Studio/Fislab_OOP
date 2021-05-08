@@ -1,72 +1,77 @@
-﻿using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Fislab_Project
+namespace Fislab_project
 {
-    class c_parabola
+    public class c_parabola
     {
         private double _vo;
-        private double _vt;
+        private double _voy;
+        private double _vox;
+        private double _vy;
+        private double _vx;
         private double _h;
         private double _hmax;
         private double _s;
         private double _smax;
         private double _gravity;
         private double _alpha;
+        private double _time;
 
-        public double vo
-        {
-            get { return _vo; }
-            set { _vo = value; }
+        public double vo{
+            get{return _vo;}
+            set{_vo = value;}
         }
-        public double vt
-        {
-            get { return _vt; }
-            set { _vt = value; }
+        public double voy{
+            get{return _voy;}
+            set{_voy = value;}
         }
-        public double h
-        {
-            get { return _h; }
-            set { _h = value; }
+        public double vox{
+            get{return _vox;}
+            set{_vox = value;}
         }
-        public double hmax
-        {
-            get { return _hmax; }
-            set { _hmax = value; }
+        public double vy{
+            get{return _vy;}
+            set{_vy = value;}
         }
-        public double s
-        {
-            get { return _s; }
-            set { _s = value; }
+        public double vx{
+            get{return _vx;}
+            set{_vx = value;}
         }
-        public double smax
-        {
-            get { return _smax; }
-            set { _smax = value; }
+        public double h{
+            get{return _h;}
+            set{_h = value;}
         }
-        public double gravity
-        {
-            get { return _gravity; }
-            set { _gravity = value; }
+        public double hmax{
+            get{return _hmax;}
+            set{_hmax = value;}
         }
-        public double alpha
-        {
-            get { return _alpha; }
-            set { _alpha = value; }
+        public double s{
+            get{return _s;}
+            set{_s = value;}
         }
-        public c_parabola() { }
-        public c_parabola(double Vo, double Vt, double H, double Hmax, double S, double Smax, double Gravity, double Alpha)
-        {
+        public double smax{
+            get{return _smax;}
+            set{_smax = value;}
+        }
+        public double gravity{
+            get{return _gravity;}
+            set{_gravity = value;}
+        }
+        public double alpha{
+            get{return _alpha;}
+            set{_alpha = value;}
+        }
+        public double time{
+            get{return _time;}
+            set{_time = value;}
+        }
+        public c_parabola(){}
+        public c_parabola(double Vo, double Voy, double Vox, double Vy, double Vx, 
+        double H, double Hmax, double S, double Smax, double Gravity, double Alpha){
             vo = Vo;
-            vt = Vt;
+            voy = Voy;
+            vox = Vox;
+            vy = Vy;
+            vx = Vx;
             h = H;
             hmax = Hmax;
             s = S;
